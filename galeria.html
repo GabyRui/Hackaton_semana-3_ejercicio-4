@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home_style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfairisplay:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet" />
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h1 style="margin-top: 80px;">
-        <center>
+        <h1 class="h1-home-header">
             <span style="color: black; font-size: 50px;">Tienda</span> 
             <span style="color: steelblue; font-size: 50px;">Muebles</span>
-        </center>
         </h1>
-        <hr>
-        <nav>
-            <ul style="list-style: none;">
+        
+    <hr class="linea-header">
+
+        <nav class="ancho-franja-home">
+            <ul class="navbar">
                 <li> <a href="./index.html">Inicio</a></li>
                 <li> <a href="./nosotros.html">Nosotros</a></li>
                 <li> <a href="./tienda.html">Tienda</a></li>
@@ -24,47 +29,75 @@
                 <li> <a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        </header>
-    
-        <main>          
-          <section>
-                <h1>Galería</h1>
-                
-                <div>
-                    <img src="./imagenes/galeria_01.jpg" alt="">
-                    <img src="./imagenes/galeria_02.jpg" alt="">
-                    <img src="./imagenes/galeria_03.jpg" alt="">                  
+    </header>
+
+    <main>
+        <!-- Franja 1 - Galería----------------------------------------->
+
+        <h1 class="h1-home h1-nosotros" >Galería</h1>
+
+        <section class="contenedor-galeria">
+
+                <div class="contenedor-imagen-galeria">
+                    <img src="./imagenes/galeria_01.jpg" alt="" class="imagen-galeria">
                 </div>
 
-                <div>
-                    <img src="./imagenes/galeria_04.jpg" alt="">
-                    <img src="./imagenes/galeria_05.jpg" alt="">
-                    <img src="./imagenes/galeria_06.jpg" alt="">                  
+                <div class="contenedor-imagen-galeria">
+                    <img src="./imagenes/galeria_02.jpg" alt="" class="imagen-galeria">
                 </div>
 
-                <div>
-                    <img src="./imagenes/galeria_07.jpg" alt="">
-                    <img src="./imagenes/galeria_08.jpg" alt="">
-                    <img src="./imagenes/galeria_09.jpg" alt="">                  
+                <div class="contenedor-imagen-galeria">
+                    <img src="./imagenes/galeria_03.jpg" alt="" class="imagen-galeria"> 
                 </div>
-            </section>
-        </main>
-    
-        <footer>
+
+                <div class="contenedor-imagen-galeria">
+                    <img src="./imagenes/galeria_04.jpg" alt="" class="imagen-galeria">
+                </div>
+
+                <div class="contenedor-imagen-galeria">
+                    <img src="./imagenes/galeria_05.jpg" alt="" class="imagen-galeria"> 
+                </div>
+
+                <div class="contenedor-imagen-galeria">
+                    <img src="./imagenes/galeria_06.jpg" alt="" class="imagen-galeria"> 
+                </div>
+
+                <div class="contenedor-imagen-galeria">
+                    <img src="./imagenes/galeria_07.jpg" alt="" class="imagen-galeria">
+                </div>
+
+                <div class="contenedor-imagen-galeria">
+                    <img src="./imagenes/galeria_08.jpg" alt="" class="imagen-galeria">
+                </div>
+
+                <div class="contenedor-imagen-galeria">
+                    <img src="./imagenes/galeria_09.jpg" alt="" class="imagen-galeria"> 
+                </div>        
+        </section>
+
+    </main>
+
+    <hr class="linea-header">
+
+
+    <!------------Footer------------------------>
+
+        <footer class="footer-container ancho-franja-home">
+
             <div>
-                <h1>Categorías</h1>
-                <ul style="list-style: none;">
-                    <li>Cocina</li>
-                    <li>Oficina</li>
-                    <li>Jardín</li>
-                    <li>Cochera</li>
-                    <li>Dormitorios</li>
+                <h1 class="h2-home h2-footer">Categorías</h1>
+                <ul>
+                    <li> Cocina </li>
+                    <li> Oficina </li>
+                    <li> Jardín </li>
+                    <li> Cochera </li>
+                    <li> Dormitorios </li>
                 </ul>
             </div>
     
             <div>
-                <h1>Sobre Nosotros</h1>
-                <ul style="list-style: none;">
+                <h1 class="h2-home">Galería</h1>
+                <ul>
                     <li>Nuestra Historia</li>
                     <li>Misión, Visión y Valores</li>
                     <li>Carreras</li>
@@ -74,16 +107,17 @@
             </div>
     
             <div>
-                <h1>Soporte</h1>
-                <ul style="list-style: none;">
+                <h1 class="h2-home">Soporte</h1>
+                <ul>
                     <li>Preguntas Frecuentes</li>
                     <li>Ayuda en línea</li>
                     <li>Confianza y Seguridad</li>
                 </ul>
             </div>
     
-           <center><p>Todos los derechos Reservados. TiendaMuebles</p></center> 
-    
         </footer>
+    
+        <p class="end-home">Todos los derechos Reservados. TiendaMuebles</p> 
+
 </body>
 </html>

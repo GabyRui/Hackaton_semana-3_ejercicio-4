@@ -3,113 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home_style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfairisplay:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet" />
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1 style="margin-top: 80px;">
-        <center>
-            <span style="color: black; font-size: 50px;">Tienda</span> 
-            <span style="color: steelblue; font-size: 50px;">Muebles</span>
-        </center>
-        </h1>
-        <hr>
-        <nav>
-            <ul style="list-style: none;">
-                <li> <a href="./index.html">Inicio</a></li>
-                <li> <a href="./nosotros.html">Nosotros</a></li>
-                <li> <a href="./tienda.html">Tienda</a></li>
-                <li> <a href="./blog.html">Blog</a></li>
-                <li> <a href="./galeria.html">Galeria</a></li>
-                <li> <a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+
+    <body>
+        <header>
+            
+        <header>
+            <h1 class="h1-home-header">
+                <span style="color: black; font-size: 50px;">Tienda</span> 
+                <span style="color: steelblue; font-size: 50px;">Muebles</span>
+            </h1>
+            
+        <hr class="linea-header">
+    
+            <nav class="ancho-franja-home">
+                <ul class="navbar">
+                    <li> <a href="./index.html">Inicio</a></li>
+                    <li> <a href="./nosotros.html">Nosotros</a></li>
+                    <li> <a href="./tienda.html">Tienda</a></li>
+                    <li> <a href="./blog.html">Blog</a></li>
+                    <li> <a href="./galeria.html">Galeria</a></li>
+                    <li> <a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
         </header>
     
-        <main>          
-          <section>
-                <h1>Nuestro Blog</h1>
-                
-                <div>
-                    <h2>Otras Entradas de Blog</h2>
-                    <ul>
-                        <li>Guía de colores</li>
-                        <li>Nuevos Modelos</li>
-                        <li>Guía para diseño de interiores</li>
-                        <li>Guía para diseño de exteriores</li>
-                    </ul>                 
-                 </div>
+        <main>
+            <!-- Franja 1 - Blog----------------------------------------->
+    
+            <h1 class="h1-home h1-nosotros h1-blog" >Nuestro Blog</h1>
 
-                <div>
-                <h1>Guía de colores</h1>
-                    <img src="./imagenes/nosotros.jpg" alt="">
-                
-                    <p><strong>Fecha: 22 de Octubre de 2022</strong></p>
-                    <p><strong>Escrito por: TiendaMuebles</strong></p>
-   
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, voluptas? Distinctio repudiandae provident repellendus, ducimus autem, est fugit neque doloribus atque, molestias repellat itaque minus labore! Voluptas explicabo in quasi.Magni nostrum assumenda sequi nihil asperiores deleniti vitae ad illum aperiam voluptatum neque, id dignissimos atque praesentium iste? Sequi esse ex totam, repudiandae blanditiis eius optio iste corporis officia libero?</p>
-                   <p>
-                   Quidem minima quia dolorum ipsa delectus ipsum porro, quod natus, ducimus, soluta illo eum id assumenda sit ipsam. Minus id deleniti illum perferendis. Ea at labore sit atque animi vero!                 
-                   </p>
-   
-                   <button>LEER</button>
-   
-                   <hr>
-            </section>
 
-            <section>               
-                <div>
-                <h1>Guía de colores</h1>
-                    <img src="./imagenes/nosotros.jpg" alt="">
-                
-                    <p><strong>Fecha: 22 de Octubre de 2022</strong></p>
-                    <p><strong>Escrito por: TiendaMuebles</strong></p>
-   
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, voluptas? Distinctio repudiandae provident repellendus, ducimus autem, est fugit neque doloribus atque, molestias repellat itaque minus labore! Voluptas explicabo in quasi.Magni nostrum assumenda sequi nihil asperiores deleniti vitae ad illum aperiam voluptatum neque, id dignissimos atque praesentium iste? Sequi esse ex totam, repudiandae blanditiis eius optio iste corporis officia libero?</p>
-                   <p>
-                   Quidem minima quia dolorum ipsa delectus ipsum porro, quod natus, ducimus, soluta illo eum id assumenda sit ipsam. Minus id deleniti illum perferendis. Ea at labore sit atque animi vero!                 
-                   </p>
-   
-                   <button>LEER</button>
-   
-                   <hr>
-            </section>
+            <div class="total-container-franja1">
+    
+                <section class="container-franja1-blog">
+
+                    <div class="imagen-entradas-blog">
+                        <h1 class="h1-blog">Guía de colores</h1>
+                        <img src="./imagenes/nosotros.jpg" alt="" class="imagen-franja1-blog">
+
+                        <div class="blog-fecha-autor">
+                            <p>Fecha: <span class="blog-fecha-autor-color">22 de Octubre de 2022</span></p>
+                            <p>Escrito por: <span class="blog-fecha-autor-color">TiendaMuebles</span></p>
+                        </div>
+
+                        <div class="blog-content">  
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, voluptas? Distinctio repudiandae provident repellendus, ducimus autem, est fugit neque doloribus atque, molestias repellat itaque minus labore! Voluptas explicabo.</p>
+                            <br>
+                            <p>
+                            Quidem minima quia dolorum ipsa delectus ipsum porro, quod natus, ducimus, soluta illo eum id assumenda sit ipsam. Minus id deleniti illum perferendis. Ea at labore sit atque animi vero. Ssoluta illo eum id assumenda sit ipsam!                 
+                            </p>  
+                            <button class="button-blog">LEER</button>  
+                        </div>          
+                    </div>
+
+                    <div class="otras-entradas-blog">  
+                        <h2 class="h2-blog">Otras Entradas de Blog</h2>     
+                        <ul class="lista-blog">
+                            <li>Guía de colores</li>
+                            <li>Nuevos Modelos</li>
+                            <li>Guía para diseño de interiores</li>
+                            <li>Guía para diseño de exteriores</li>
+                        </ul>  
+                    </div>
+                </section>
+
+                <hr class="linea-header-blog">
+
+                <!-- Franja 1 - artículo 2----------------------------------------->
+
+                <section class="container-franja1-blog">
+
+                    <div class="imagen-entradas-blog">
+                        <h1 class="h1-blog">Guía de colores</h1>
+                        <img src="./imagenes/nosotros.jpg" alt="" class="imagen-franja1-blog">
+
+                        <div class="blog-fecha-autor">
+                            <p>Fecha: <span class="blog-fecha-autor-color">22 de Octubre de 2022</span></p>
+                            <p>Escrito por: <span class="blog-fecha-autor-color">TiendaMuebles</span></p>
+                        </div>
+
+                        <div class="blog-content">  
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, voluptas? Distinctio repudiandae provident repellendus, ducimus autem, est fugit neque doloribus atque, molestias repellat itaque minus labore! Voluptas explicabo.</p>
+                            <br>
+                            <p>
+                            Quidem minima quia dolorum ipsa delectus ipsum porro, quod natus, ducimus, soluta illo eum id assumenda sit ipsam. Minus id deleniti illum perferendis. Ea at labore sit atque animi vero. Ssoluta illo eum id assumenda sit ipsam!                 
+                            </p>  
+                            <button class="button-blog">LEER</button>  
+                        </div>          
+                    </div>
+                </section>
+            </div>   
         </main>
     
-        <footer>
-            <div>
-                <h1>Categorías</h1>
-                <ul style="list-style: none;">
-                    <li>Cocina</li>
-                    <li>Oficina</li>
-                    <li>Jardín</li>
-                    <li>Cochera</li>
-                    <li>Dormitorios</li>
-                </ul>
-            </div>
+        <hr class="linea-header">
     
-            <div>
-                <h1>Sobre Nosotros</h1>
-                <ul style="list-style: none;">
-                    <li>Nuestra Historia</li>
-                    <li>Misión, Visión y Valores</li>
-                    <li>Carreras</li>
-                    <li>Políticas de Privacidad</li>
-                    <li>Términos del Servicio</li>
-                </ul>
-            </div>
+        <!-------Footer------------------------>
     
-            <div>
-                <h1>Soporte</h1>
-                <ul style="list-style: none;">
-                    <li>Preguntas Frecuentes</li>
-                    <li>Ayuda en línea</li>
-                    <li>Confianza y Seguridad</li>
-                </ul>
-            </div>
+            <footer class="footer-container ancho-franja-home">
     
-           <center><p>Todos los derechos Reservados. TiendaMuebles</p></center> 
+                <div>
+                    <h1 class="h2-home h2-footer">Categorías</h1>
+                    <ul>
+                        <li> Cocina </li>
+                        <li> Oficina </li>
+                        <li> Jardín </li>
+                        <li> Cochera </li>
+                        <li> Dormitorios </li>
+                    </ul>
+                </div>
+        
+                <div>
+                    <h1 class="h2-home">Sobre Nosotros</h1>
+                    <ul>
+                        <li>Nuestra Historia</li>
+                        <li>Misión, Visión y Valores</li>
+                        <li>Carreras</li>
+                        <li>Políticas de Privacidad</li>
+                        <li>Términos del Servicio</li>
+                    </ul>
+                </div>
+        
+                <div>
+                    <h1 class="h2-home">Soporte</h1>
+                    <ul>
+                        <li>Preguntas Frecuentes</li>
+                        <li>Ayuda en línea</li>
+                        <li>Confianza y Seguridad</li>
+                    </ul>
+                </div>
+        
+            </footer>
+        
+            <p class="end-home">Todos los derechos Reservados. TiendaMuebles</p> 
+    </body>
+    </html>    
+
     
-        </footer>
-</body>
-</html>
+  
+        

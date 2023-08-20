@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home_style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfairisplay:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet" />
     <title>Document</title>
 </head>
 <body>
+
     <header>
-        <h1 style="margin-top: 80px;">
-        <center>
+        <h1 class="h1-home-header">
             <span style="color: black; font-size: 50px;">Tienda</span> 
             <span style="color: steelblue; font-size: 50px;">Muebles</span>
-        </center>
         </h1>
-        <hr>
-        <nav>
-            <ul style="list-style: none;">
+        
+    <hr class="linea-header">
+
+        <nav class="ancho-franja-home">
+            <ul class="navbar">
                 <li> <a href="./index.html">Inicio</a></li>
                 <li> <a href="./nosotros.html">Nosotros</a></li>
                 <li> <a href="./tienda.html">Tienda</a></li>
@@ -24,99 +30,118 @@
                 <li> <a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        </header>
-    
-    <main>          
-        <section>
-                <h1>Contacto</h1>
-                
-               <form action="">
+    </header>
 
-            <div>
-                <h3>TUS DATOS</h3>
+    <main>
+        <!-- Franja 4 - Sobre nosotros----------------------------------------->
+        
 
-                <div>
-                    <label for="Nombre">Nombre:</label>
-                    <input type="text" id="nombre" placeholder="Tu Nombre">
+        <h1 class="h1-home h1-nosotros" >Contacto</h1>
+
+        <!--------- Formulario - Tus datos ----------------->
+
+        <form action="">
+            <div class="container-datos">
+                <h3 class="formulario-titulos">TUS DATOS</h3>
+
+
+                <div class="line-datos">
+
+                    <div class="contenedor-datos">
+                        <div class="titulo-datos">
+                            <label for="Nombre" class="item-datos">Nombre:</label> 
+                            <label for="Asunto" class="item-datos">Asunto:</label>
+                            <label for="email" class="item-datos">E-mail:</label>
+                            <label for="telefono" class="item-datos">Teléfono:</label>
+                            <label for="mensaje" class="item-datos">Mensaje:</label>
+                        </div>
+
+                        <div class="contenido-datos">
+                            <input type="text" id="nombre" placeholder="Tu Nombre" class="input-info">
+                            <input type="text" id="asunto" placeholder="Tu Asunto" class="input-info">
+                            <input type="text" id="email" placeholder="Tu Email" class="input-info">
+                            <input type="text" id="phone" placeholder="Tu Teléfono" class="input-info">
+                            <textarea name="" id="" cols="20" rows="10"></textarea>
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-                    <label for="Asunto">Asunto:</label>
-                    <input type="text" id="asunto" placeholder="Tu Asunto">
-                </div>
+<!--------- Formulario - País ----------------->
 
-                <div>
-                    <label for="email">E-mail:</label>
-                    <input type="text" id="email" placeholder="Tu Email">
-                </div>
+            <div class="contenedor-total-pais">
+                <h3 class="formulario-titulos">PAÍS</h3>
+                <div class="line-pais">
+                    <div>
+                        <label for="Pais">País</label>
+                    </div>
 
-                <div>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="text" id="phone" placeholder="Tu Teléfono">
-                </div>
-
-                <div>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea name="" id="" cols="20" rows="10"></textarea>
-                </div>
-            </div>      
-
-            <div>
-                <h3>PAÍS</h3>
-
-                <div>
-                    <label for="Pais">País</label>
-                    <select name="" id="">
-                        <option value="1">México</option>
-                        <option value="2">Perú</option>
-                        <option value="3">Colombia</option>
-                        <option value="4">Argentina</option>
-                        <option value="5">España</option>
-                        <option value="6">Chile</option>
-                    </select>
-                </div>
-            </div>
-
-            <div>
-                <h3>INFORMACIÓN EXTRA</h3>
-
-                <div>
-                    <label for="cliente">Cliente</label>
-                    <input type="radio" name="opcion" id="1">                   
-                </div>
-
-                <div>
-                    <label for="proveedor">Proveedor</label>
-                    <input type="radio" name="opcion" id="2">                   
-                </div>
-
-                <div>
-                    <label for="categoria de interés">Categoría de interés</label>
-                    <textarea name="" id="" cols="20" rows="10"></textarea>
+                    <div>
+                        <select name="" id="" class="pais-select">
+                            <option value="1" disabled selected>--Seleccione--</option>
+                            <option value="2">México</option>
+                            <option value="3">Perú</option>
+                            <option value="4">Colombia</option>
+                            <option value="5">Argentina</option>
+                            <option value="6">España</option>
+                            <option value="7">Chile</option>
+                        </select>
+                    </div>
                 </div>
             </div>
 
-            <button>ENVIAR FORMULARIO</button>
-            <hr>
+<!-- Formulario - Información extra -->
 
+            <div>
+                <h3 class="formulario-titulos">INFORMACIÓN EXTRA</h3>
+
+                <div class="line-infoextra">
+
+                    <div class="container-total-infoextra">
+
+                        <div class="container-infoextra">
+                            <div class="info-titulo">
+                                <label for="cliente">Cliente</label>
+                                <label for="proveedor">Proveedor</label>
+                                <label for="categoria de interés">Categoría de interés</label>
+                            </div>
+                        </div>
+
+                        <div class="info-detalle">
+                            <input type="radio" name="opcion" id="1"> 
+                            <input type="radio" name="opcion" id="2"> 
+                            <textarea name="" id="" cols="20" rows="10" class="textarea-info-detalle"></textarea>                           
+                        </div>
+                    </div>                   
+                </div>
+
+                <button class="button-formulario">ENVIAR FORMULARIO</button>
+
+            </div>
+            
+            <hr class="linea-header">
         </form>
     </section>
-    
-        <footer>
+
+    </main>
+
+    <!-------Footer------------------------>
+
+        <footer class="footer-container ancho-franja-home">
+
             <div>
-                <h1>Categorías</h1>
-                <ul style="list-style: none;">
-                    <li>Cocina</li>
-                    <li>Oficina</li>
-                    <li>Jardín</li>
-                    <li>Cochera</li>
-                    <li>Dormitorios</li>
+                <h1 class="h2-home h2-footer">Categorías</h1>
+                <ul>
+                    <li> Cocina </li>
+                    <li> Oficina </li>
+                    <li> Jardín </li>
+                    <li> Cochera </li>
+                    <li> Dormitorios </li>
                 </ul>
             </div>
     
             <div>
-                <h1>Sobre Nosotros</h1>
-                <ul style="list-style: none;">
+                <h1 class="h2-home">Sobre Nosotros</h1>
+                <ul>
                     <li>Nuestra Historia</li>
                     <li>Misión, Visión y Valores</li>
                     <li>Carreras</li>
@@ -126,16 +151,16 @@
             </div>
     
             <div>
-                <h1>Soporte</h1>
-                <ul style="list-style: none;">
+                <h1 class="h2-home">Soporte</h1>
+                <ul>
                     <li>Preguntas Frecuentes</li>
                     <li>Ayuda en línea</li>
                     <li>Confianza y Seguridad</li>
                 </ul>
             </div>
     
-           <center><p>Todos los derechos Reservados. TiendaMuebles</p></center> 
-    
-        </footer>
+        </footer>  
+      
+        <p class="end-home">Todos los derechos Reservados. TiendaMuebles</p>            
 </body>
 </html>

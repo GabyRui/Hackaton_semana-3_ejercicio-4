@@ -3,130 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home_style.css">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfairisplay:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet" />
+    
     <title>Document</title>
 </head>
 <body>
 
     <header>
-    <h1 style="margin-top: 80px;">
-    <center>
-        <span style="color: black; font-size: 50px;">Tienda</span> 
-        <span style="color: steelblue; font-size: 50px;">Muebles</span>
-    </center>
-    </h1>
-    <hr>
-    <nav>
-        <ul style="list-style: none;">
-            <li> <a href="./index.html">Inicio</a></li>
-            <li> <a href="./nosotros.html">Nosotros</a></li>
-            <li> <a href="./tienda.html">Tienda</a></li>
-            <li> <a href="./blog.html">Blog</a></li>
-            <li> <a href="./galeria.html">Galeria</a></li>
-            <li> <a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+        <h1 class="h1-home-header">
+            <span style="color: black; font-size: 50px;">Tienda</span> 
+            <span style="color: steelblue; font-size: 50px;">Muebles</span>
+        </h1>
+        
+    <hr class="linea-header">
+
+        <nav class="ancho-franja-home">
+            <ul class="navbar">
+                <li> <a href="./index.html">Inicio</a></li>
+                <li> <a href="./nosotros.html">Nosotros</a></li>
+                <li> <a href="./tienda.html">Tienda</a></li>
+                <li> <a href="./blog.html">Blog</a></li>
+                <li> <a href="./galeria.html">Galeria</a></li>
+                <li> <a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
 
-        <section>
-            <img src="./imagenes/principal.jpg" alt="">
-            <h1>Categorías de Productos</h1>
-
-            <div>
-                <img src="./imagenes/categoria1.jpg" alt="">
-                <p>Oficina</p>     
-            </div>
-
-            <div>
-                <img src="./imagenes/categoria2.jpg" alt="">
-                <p>Hogar</p>     
-            </div>
-
-            <div>
-                <img src="./imagenes/categoria3.jpg" alt="">
-                <p>Cocina</p>     
-            </div>
-        </section>
+        
+        <!-- Franja 2 - Imagen principal----------------------------------------->
 
         <div>
-            <img src="./imagenes/nosotros.jpg" alt="">
-            <h1>Sobre nosotros</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam odio aut adipisci sunt incidunt suscipit quaerat sit a, fugiat id maxime natus recusandae itaque tempore reprehenderit neque nobis possimus fuga.
-            Obcaecati magni recusandae error reprehenderit tempore quaerat nam eaque, harum pariatur dicta accusantium adipisci consequuntur libero distinctio ipsa perferendis fugiat id ut molestias iusto temporibus aut. Quidem ex numquam dolorum.
-            Maiores quisquam voluptatibus veniam? Debitis voluptatum, dolorem deleniti facere eaque vero aliquid vitae illum similique ducimus repellat itaque at placeat recusandae dicta asperiores magni quasi cumque a consequuntur consequatur eligendi.</p>
+            <img src="./imagenes/principal.jpg" alt="" class="imagen-franja1">
         </div>
 
-        
-        <section>
-            <h1>Nuestros Productos</h1>
-            <div>
-                <img src="./imagenes/galeria_09.jpg" alt="">
-                <h2>Producto 1</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore cumque magni minima! Consequuntur consectetur quibusdam, iste quisquam voluptates.</p>
-                <p><strong>$1,000,000.00</strong></p>
-                <button>AGREGAR AL CARRITO</button>
-             </div>
+        <!-- Franja 3 - Categorías de productos----------------------------------------->
 
-             <div>
-                <img src="./imagenes/producto2.jpg" alt="">
-                <h2>Producto 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore cumque magni minima! Consequuntur consectetur quibusdam, iste quisquam voluptates.</p>
-                <p><strong>$1,000,000.00</strong></p>
-                <button>AGREGAR AL CARRITO</button>
-             </div>
+        <section class="franja3-home ancho-franja-home">
+            
+            <h1 class="h1-franja2 h1-home">Categorías de Productos</h1>
 
-             <div>
-                <img src="./imagenes/producto3.jpg" alt="">
-                <h2>Producto 3</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore cumque magni minima! Consequuntur consectetur quibusdam, iste quisquam voluptates.</p>
-                <p><strong>$1,000,000.00</strong></p>
-                <button>AGREGAR AL CARRITO</button>
-             </div>
+            <div class="container-franja3">
 
-             <div>
-                <img src="./imagenes/producto4.jpg" alt="">
-                <h2>Producto 4</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore cumque magni minima! Consequuntur consectetur quibusdam, iste quisquam voluptates.</p>
-                <p><strong>$1,000,000.00</strong></p>
-                <button>AGREGAR AL CARRITO</button>
-             </div>
+                <div class="div-franja3">
+                    <img src="./imagenes/categoria1.jpg" alt="" class="imagen-producto-franja3">
+                    <p class="p-franja3">Oficina</p>  
+                </div>
 
-             
-             <div>
-                <img src="./imagenes/producto5.jpg" alt="">
-                <h2>Producto 5</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore cumque magni minima! Consequuntur consectetur quibusdam, iste quisquam voluptates.</p>
-                <p><strong>$1,000,000.00</strong></p>
-                <button>AGREGAR AL CARRITO</button>
-             </div>
+                <div class="div-franja3">
+                    <img src="./imagenes/categoria2.jpg" alt="" class="imagen-producto-franja3">
+                    <p class="p-franja3">Hogar</p>     
+                </div>
 
-             <div>
-                <img src="./imagenes/producto6.jpg" alt="">
-                <h2>Producto 6</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore cumque magni minima! Consequuntur consectetur quibusdam, iste quisquam voluptates.</p>
-                <p><strong>$1,000,000.00</strong></p>
-                <button>AGREGAR AL CARRITO</button>
-             </div>
+                <div class="div-franja3">
+                    <img src="./imagenes/categoria3.jpg" alt="" class="imagen-producto-franja3">
+                    <p class="p-franja3">Cocina</p>     
+                </div>
         </section>
 
+           <!-- Franja 4 - Sobre nosotros----------------------------------------->
+
+        <section class="container-franja4-home">
+            <img src="./imagenes/nosotros.jpg" alt="" class="imagen-franja4">
+            <div class="container-color-h1-p-franja4">       
+                    <h1 class="h1-home" >Sobre nosotros</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Quisquam odio aut adipisci sunt incidunt suscipit quaerat sit <br>a, fugiat id maxime natus recusandae itaque tempore maxime br natus <br>recusandae itaque tempore maxime natus recusandae itaque tempore.</p>          
+            </div>
+        </section>
+
+
+        <!-- Franja 5 - Nuestros productos----------------------------------------->
+
+        <!-- Producto1 -->
+      
+        <section class="contenedor-franja5 ancho-franja-home">
+            <h1 class="h1-home h1-franja5-productos">Nuestros Productos</h1>
+
+            <div class="ancho-franja-home">                
+                <article class="contenedor-franja5-producto1">
+                    <div class="contenedor-imagen-producto">
+                        <img src="./imagenes/galeria_09.jpg" alt="">
+                    </div>
+                    <div class="info-product">
+                        <h2 class="h2-home h2-productos">Producto 1</h2>
+                        <p class="contenido-product">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore cumque magni minima! Consequuntur.</p>
+                        <p class="price-product">$1,000,000.00</p>
+                        <button class="button-product">AGREGAR AL CARRITO</button>
+                    </div>
+                </article>
+
+                <br>
+
+         <!-- Producto 2 y 3 -->
+
+                <div class="franja5-producto2-3 ancho-franja-home">
+                    <article class="contenedor-franja5-producto2">
+                        <div class="contenedor-imagen-producto2">
+                            <img src="./imagenes/producto2.jpg" alt="">
+                        </div>
+
+                        <div class="contenedor-info-product2">
+                            <h2 class="h2-home h2-productos">Producto 2</h2>
+                            <p class="contenido-product2-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore nemo sit amet consecteur Lorem Ipsum dolor sit.</p>
+                            <p class="price-product2-3">$1,000,000.00</p>
+                            <button class="button-product2-3">AGREGAR AL CARRITO</button>
+                        </div>
+                    </article>
+
+                    <article class="contenedor-franja5-producto3">
+                        <div class="contenedor-imagen-producto3">
+                            <img src="./imagenes/producto3.jpg" alt="">
+                        </div>
+
+                        <div class="contenedor-info-product3">
+                            <h2 class="h2-home h2-productos">Producto 3</h2>
+                            <p class="contenido-product2-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore nemo sit amet consecteur Lorem Ipsum dolor sit.</p>
+                            <p class="price-product2-3">$1,000,000.00</p>
+                            <button class="button-product2-3">AGREGAR AL CARRITO</button>
+                        </div>
+                    </article>
+                </div>
+
+        <!-- -------Producto 4, 5 y 6 -->
+
+            <div class="ancho-franja-home franja5-agrupacion" >
+
+                <article class="contenedor-franja5-producto4">
+                    <div class="contenedor-imagen-producto4">
+                        <img src="./imagenes/producto4.jpg" alt="">
+                    </div>
+                    <div class="contenedor-info-product4" >
+                        <h2 class="h2-home h2-productos">Producto 4</h2>
+                        <p class="contenido-product">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore cumque magni minima! Consequuntur consectetur quibusdam, iste quisquam voluptates.</p>
+                        <p class="price-product-final">$1,000,000.00</strong></p>
+                        <button class="button-product-final">AGREGAR AL CARRITO</button>
+                    </div>
+                </article>
+               
+                <article class="contenedor-franja5-producto5">
+                    <div class="contenedor-imagen-producto5">
+                        <img src="./imagenes/producto5.jpg" alt="">
+                    </div>                   
+                    <div class="contenedor-info-product5">
+                        <h2 class="h2-home h2-productos">Producto 5</h2>
+                        <p class="contenido-product">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore cumque magni minima! Consequuntur consectetur quibusdam, iste quisquam voluptates.</p>
+                        <p class="price-product-final">$1,000,000.00</p>
+                        <button class="button-product-final">AGREGAR AL CARRITO</button>
+                    </div>
+                </article>
+
+                <article class="contenedor-franja5-producto6">
+                    <div class="contenedor-imagen-producto6">
+                        <img src="./imagenes/producto6.jpg" alt="">
+                    </div>
+                    <div class="contenedor-info-product6">
+                        <h2 class="h2-home h2-productos">Producto 6</h2>
+                        <p class="contenido-product"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore cumque magni minima! Consequuntur consectetur quibusdam, iste quisquam voluptates.</p>
+                        <p class="price-product-final">$1,000,000.00</p>
+                        <button class="button-product-final">AGREGAR AL CARRITO</button>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
 
-    <footer>
+    <hr class="linea-header">
+
+    <!-------Footer------------------------>
+
+    <footer class="footer-container ancho-franja-home">
+
         <div>
-            <h1>Categorías</h1>
-            <ul style="list-style: none;">
-                <li>Cocina</li>
-                <li>Oficina</li>
-                <li>Jardín</li>
-                <li>Cochera</li>
-                <li>Dormitorios</li>
+            <h1 class="h2-home h2-footer">Categorías</h1>
+            <ul>
+                <li> Cocina </li>
+                <li> Oficina </li>
+                <li> Jardín </li>
+                <li> Cochera </li>
+                <li> Dormitorios </li>
             </ul>
         </div>
 
         <div>
-            <h1>Sobre Nosotros</h1>
-            <ul style="list-style: none;">
+            <h1 class="h2-home">Sobre Nosotros</h1>
+            <ul>
                 <li>Nuestra Historia</li>
                 <li>Misión, Visión y Valores</li>
                 <li>Carreras</li>
@@ -136,17 +201,17 @@
         </div>
 
         <div>
-            <h1>Soporte</h1>
-            <ul style="list-style: none;">
+            <h1 class="h2-home">Soporte</h1>
+            <ul>
                 <li>Preguntas Frecuentes</li>
                 <li>Ayuda en línea</li>
                 <li>Confianza y Seguridad</li>
             </ul>
         </div>
 
-       <center><p>Todos los derechos Reservados. TiendaMuebles</p></center> 
-
     </footer>
+
+    <p class="end-home">Todos los derechos Reservados. TiendaMuebles</p> 
 
 </body>
 </html>

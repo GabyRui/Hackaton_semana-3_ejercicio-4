@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfairisplay:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="home_style.css">
     <title>Document</title>
 </head>
 <body>
+        
     <header>
-        <h1 style="margin-top: 80px;">
-        <center>
+        <h1 class="h1-home-header">
             <span style="color: black; font-size: 50px;">Tienda</span> 
             <span style="color: steelblue; font-size: 50px;">Muebles</span>
-        </center>
         </h1>
-        <hr>
-        <nav>
-            <ul style="list-style: none;">
+        
+    <hr class="linea-header">
+
+        <nav class="ancho-franja-home">
+            <ul class="navbar">
                 <li> <a href="./index.html">Inicio</a></li>
                 <li> <a href="./nosotros.html">Nosotros</a></li>
                 <li> <a href="./tienda.html">Tienda</a></li>
@@ -24,34 +29,46 @@
                 <li> <a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        </header>
-    
-        <main>   
-            <div>
-                <center><h1>Sobre Nosotros</h1></center>      
-                <img src="./imagenes/nosotros.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, vero, tenetur adipisci laborum ullam ducimus illo sunt architecto doloribus sit, neque officia itaque voluptates quam aliquid odit tempora aperiam culpa.</p>
-            </div>
+    </header>
 
-        <hr>
-    
-        </main>
-    
-        <footer>
+    <main>
+        <!-- Franja 4 - Sobre nosotros----------------------------------------->
+
+        <h1 class="h1-home h1-nosotros" >Sobre nosotros</h1>
+
+        <section class="container-franja1-nosotros">
+            <img src="./imagenes/nosotros.jpg" alt="" class="imagen-franja4">
+            <div>       
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Quisquam odio aut adipisci sunt incidunt suscipit quaerat sit <br>a, fugiat id maxime natus recusandae itaque tempore maxime br natus.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Quisquam odio aut adipisci sunt incidunt suscipit quaerat sit <br>a, fugiat id maxime natus recusandae itaque tempore maxime br natus.</p>  
+            </div>
+        </section>
+
+    </main>
+
+    <hr class="linea-header">
+
+    <!-------Footer------------------------>
+
+        <!-------Footer------------------------>
+
+        <footer class="footer-container ancho-franja-home">
+
             <div>
-                <h1>Categorías</h1>
-                <ul style="list-style: none;">
-                    <li>Cocina</li>
-                    <li>Oficina</li>
-                    <li>Jardín</li>
-                    <li>Cochera</li>
-                    <li>Dormitorios</li>
+                <h1 class="h2-home h2-footer">Categorías</h1>
+                <ul>
+                    <li> Cocina </li>
+                    <li> Oficina </li>
+                    <li> Jardín </li>
+                    <li> Cochera </li>
+                    <li> Dormitorios </li>
                 </ul>
             </div>
     
             <div>
-                <h1>Sobre Nosotros</h1>
-                <ul style="list-style: none;">
+                <h1 class="h2-home">Sobre Nosotros</h1>
+                <ul>
                     <li>Nuestra Historia</li>
                     <li>Misión, Visión y Valores</li>
                     <li>Carreras</li>
@@ -61,16 +78,17 @@
             </div>
     
             <div>
-                <h1>Soporte</h1>
-                <ul style="list-style: none;">
+                <h1 class="h2-home">Soporte</h1>
+                <ul>
                     <li>Preguntas Frecuentes</li>
                     <li>Ayuda en línea</li>
                     <li>Confianza y Seguridad</li>
                 </ul>
             </div>
     
-           <center><p>Todos los derechos Reservados. TiendaMuebles</p></center> 
-    
         </footer>
+    
+        <p class="end-home">Todos los derechos Reservados. TiendaMuebles</p> 
+    
 </body>
 </html>
